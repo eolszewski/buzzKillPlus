@@ -1,0 +1,29 @@
+body {
+	min-width: 300px;
+	max-width: 400px;
+	max-height: 200px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	font-size: 12px;
+	background: #dff0d8
+}
+
+.btn-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	border: none;
+	width: 100%; 
+	border-radius: 0px
+}
+
+.btn-success:hover {
+	color: #3c763d;
+    text-decoration: underline;
+	background-color: #dff0d8
+}
+
+div.tagsinput span.tag:hover {
+	color: #fff;
+	background-color: #449d44
+}

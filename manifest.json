@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "BuzzKill Plus",
+  "description": "An extension that let's you hide things that you don't want to see on Facebook",
+  "version": "0.0.0.1",
+
+  "browser_action": {
+    "default_icon": "/assets/img/icon_16.png",
+    "default_popup": "index.html"
+  },
+  
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/*","https://www.facebook.com/*"],
+      "js": ["/assets/js/myscript.js","/assets/js/jquery-2.1.1.min.js"]
+    }
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
